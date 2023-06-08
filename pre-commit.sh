@@ -4,7 +4,7 @@ command -v gitleaks >/dev/null 2>&1 || {
     
     # Installed gitleaks in the operating system
     if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        curl -sSfL https://github.com/zricethezav/gitleaks/releases/latest/download/gitleaks-linux-amd64.tar.gz | tar -xz
+        curl -sSfL https://github.com/gitleaks/gitleaks/releases/download/v8.16.4/gitleaks_8.16.4_linux_x64.tar.gz | tar -xz
         export PATH=$(pwd):$PATH
     elif [[ "$OSTYPE" == "darwin"* ]]; then
         curl -sSfL https://github.com/gitleaks/gitleaks/releases/download/v8.16.4/gitleaks_8.16.4_darwin_arm64.tar.gz | tar -xz
